@@ -18,3 +18,18 @@ Po wypełnieniu tabelki napisz wnioski, które z niej wynikają. Np "najlepiej d
 
 Kod programu umieść w repozytorium. Link wyślij z rozwiązaniem. Do rozwiązania dołącz tabelkę oraz wnioski.
 </p>
+<br>
+<hr>
+<br>
+<h3 style='text-align: center;'> Przykładowe zmierzone czasy poszczególnych algorytmów na tej samej wylosowanej tablicy - tablica składa się z 300tys. elementów.</h3>
+<br>
+<img src="image/time.png" style='margin-left: auto; margin-right: auto; width: 50%; display: block;'>
+<br>
+<h3 style='text-align: center;'> Jako czwarty algorytm zostało użyte sortowanie przez wstawianie (Insertion sort).<br>
+Jeden z najprostszych algorytmów, który odzwierciedla zasady w jaki sposób ludzie ustawiaja karty - kolejne elementy wejściowe są ustawiane na odpowiednie miejsca docelowe.</h3>
+<br>
+<h3 style='text-align: center'> Wnioski oraz 2 kolejne przykłady czasów z większa ilością elementów w tablicy można zobaczyć w pliku "Wnioski.docx" dołączonym do tego repozytorium.</h3>
+
+<br><br>
+
+<footer> Filip Bianga s19329

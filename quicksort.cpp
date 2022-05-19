@@ -52,6 +52,7 @@ int main()
 {
     srand(time(NULL));
     int A[300000];
+
     for(int i=0; i < 300000; i++)
     {
         A[i] = rand() % 300000;
@@ -61,6 +62,7 @@ int main()
     quicksort(A, 0, 300000 -1);
     clock_t stop = clock();
 
-    printf("\n Tabela losowa:\n");
+    // printtable(A, 300000);
     printf("Czas: %lu ms\n", stop, start);
+
 }
