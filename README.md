@@ -21,6 +21,8 @@ Kod programu umieść w repozytorium. Link wyślij z rozwiązaniem. Do rozwiąza
 <br>
 <hr>
 <br>
+<h3 style='text-align: center;'><strong>Każdy algorytm na początku robiłem na pojedyncze pliki. W pliku main.cpp znajdują się wszystkie algorytmy sortujące i korzystają one z jednej raz losowej tablicy.</h3>
+<br>
 <h3 style='text-align: center;'> Przykładowe zmierzone czasy poszczególnych algorytmów na tej samej wylosowanej tablicy - tablica składa się z 300tys. elementów.</h3>
 <br>
 <img src="image/time.png" style='margin-left: auto; margin-right: auto; width: 50%; display: block;'>
