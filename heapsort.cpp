@@ -40,19 +40,31 @@ void heapsort(int A[], int n)
     }
 }
 
+void printtable(int A[], int size)
+{
+    // wyświetlanie tablicy z jej zawartością
+    printf("Tablica = [");
+    for (int i=0; i < size-1; i++)
+    {
+        printf("%d, ", A[i]);
+    }
+    printf("%d]\n", A[size-1]);
+}
+
 int main ()
 {
     srand(time(NULL));
     int A[300000];
+
     for(int i=0; i < 300000; i++)
     {
         A[i] = rand() % 300000;
     }
 
-    clock_t start = clock();
+  clock_t start = clock();
 	heapsort(A, 300000);
 	clock_t stop = clock();
 
-	printf("\nTabela losowa:\n");
+  // printtable(a, 300000);
 	printf( "Czas: %lu ms\n", stop - start );
 }
