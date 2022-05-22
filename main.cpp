@@ -173,8 +173,9 @@ void printtable(int A[], int size)
 
 int main ()
 {
+    // tablica losowa
     srand(time(NULL));
-    const int n = 300000;
+    const int n = 100000;
     int A[n];
 
     for(int i=0; i < n; i++)
@@ -190,36 +191,128 @@ int main ()
     std::copy(std::begin(A), std::end(A), std::begin(D));
 
     // printtable(A, n);
-    // QUICKSORT
+    // QUICKSORT dla losowej
     clock_t startquick = clock();
     quicksort(A, 0, n-1);
     clock_t stopquick = clock();
 
     
-    printf( "Czas quicksort: %lu ms\n", stopquick - startquick );
+    printf( "Czas dla tablicy losowej - quicksort: %lu ms\n", stopquick - startquick );
     
     // printtable(B, n);
-    // MERGE-SORT
+    // MERGE-SORT dla losowej
     clock_t startmerge = clock();
     mergeSort(B, 0, n-1);
     clock_t stopmerge = clock();
 
-    printf( "Czas merge-sort: %lu ms\n", stopmerge - startmerge );
+    printf( "Czas dla tablicy losowej - merge-sort: %lu ms\n", stopmerge - startmerge );
 
     // printtable(C, n);
-    // HEAPSORT
+    // HEAPSORT dla losowej
     clock_t startheap = clock();
     heapsort(C, n);
     clock_t stopheap = clock();
 
-    printf( "Czas heapsort: %lu ms\n", stopheap - startheap );
+    printf( "Czas dla tablicy losowej - heapsort: %lu ms\n", stopheap - startheap );
 
     // printtable(D, n);
-    // INSERT SORT
+    // INSERT SORT dla losowej
     clock_t startinsert = clock();
     insertSort(D, n);
     clock_t stopinsert = clock();
 
-    printf( "Czas insertsort: %lu ms\n", stopinsert - startinsert );
+    printf( "Czas dla tablicy losowej - insertsort: %lu ms\n", stopinsert - startinsert );
 
+    // tablica posortowana
+    int E[n];
+	for (int i = 0; i <= n; i++)
+	{
+	    E[i]= i;
+	}
+    int F[n];
+    int G[n];
+    int H[n];
+    std::copy(std::begin(E), std::end(E), std::begin(F));
+    std::copy(std::begin(E), std::end(E), std::begin(G));
+    std::copy(std::begin(E), std::end(E), std::begin(H));
+	
+    // printtable(A, n);
+    // QUICKSORT dla posortowanej
+    clock_t startquick1 = clock();
+    quicksort(E, 0, n-1);
+    clock_t stopquick1 = clock();
+
+    
+    printf( "\nCzas dla tablicy posortowanej - quicksort: %lu ms\n", stopquick1 - startquick1 );
+    
+    // printtable(B, n);
+    // MERGE-SORT dla posortowanej
+    clock_t startmerge1 = clock();
+    mergeSort(F, 0, n-1);
+    clock_t stopmerge1 = clock();
+
+    printf( "Czas dla tablicy posortowanej - merge-sort: %lu ms\n", stopmerge1 - startmerge1 );
+
+    // printtable(C, n);
+    // HEAPSORT dla posortowanej
+    clock_t startheap1 = clock();
+    heapsort(G, n);
+    clock_t stopheap1 = clock();
+
+    printf( "Czas dla tablicy posortowanej - heapsort: %lu ms\n", stopheap1 - startheap1 );
+
+    // printtable(D, n);
+    // INSERT SORT dla posortowanej
+    clock_t startinsert1 = clock();
+    insertSort(H, n);
+    clock_t stopinsert1 = clock();
+
+    printf( "Czas dla tablicy posortowanej - insertsort: %lu ms\n", stopinsert1 - startinsert1 );
+    
+    // tablica odwrotna
+    int	I[n];
+	for (int i = 0; i <= n; i++)
+	{
+	    I[i]= i;
+	}
+
+    int J[n];
+    int K[n];
+    int L[n];
+    std::copy(std::begin(I), std::end(I), std::begin(J));
+    std::copy(std::begin(I), std::end(I), std::begin(K));
+    std::copy(std::begin(I), std::end(I), std::begin(L));
+	
+	// printtable(A, n);
+    // QUICKSORT dla odwrotnej
+    clock_t startquick2 = clock();
+    quicksort(I, 0, n-1);
+    clock_t stopquick2 = clock();
+
+    
+    printf( "\nCzas dla tablicy odwrotnej - quicksort: %lu ms\n", stopquick2 - startquick2 );
+    
+    // printtable(B, n);
+    // MERGE-SORT dla odwrotnej
+    clock_t startmerge2 = clock();
+    mergeSort(J, 0, n-1);
+    clock_t stopmerge2 = clock();
+
+    printf( "Czas dla tablicy odwrotnej - merge-sort: %lu ms\n", stopmerge2 - startmerge2 );
+
+    // printtable(C, n);
+    // HEAPSORT dla odwrotnej
+    clock_t startheap2 = clock();
+    heapsort(K, n);
+    clock_t stopheap2 = clock();
+
+    printf( "Czas dla tablicy odwrotnej - heapsort: %lu ms\n", stopheap2 - startheap2 );
+
+    // printtable(D, n);
+    // INSERT SORT dla odwrotnej
+    clock_t startinsert2 = clock();
+    insertSort(L, n);
+    clock_t stopinsert2 = clock();
+
+    printf( "Czas dla tablicy odwrotnej - insertsort: %lu ms\n", stopinsert2 - startinsert2 );
 }
